@@ -13,34 +13,20 @@ body {
 /* HEADER SECTION */
 
 #header {
+  display: flex;
   height: 69px;
-  width: 100%
-  display: flex;
+  width: 1300px;
   border-bottom: 1px solid seashell;
-  background-color: black;
-  z-index: 1
-  padding: 10px;
-}
-
-.logocontainer {
-  display: flex;
-  padding-left: 10px;
-  align-items: center;
-  justify-content: center;
-  padding-left: 10px;
+  z-index: 5;
+  position: fixed;
 }
 
 .headcontainer {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-}
-
-#logo {
-  height: 50px;
-  padding-left: 10px;
-  padding-top: 10px;
-  display: inline-flex;
+  margin: 10px;
 }
 
 .navcontainer {
