@@ -48,13 +48,13 @@
   width: 1200px;
   display: block;
   margin: auto;
+  justify-content: center;
 }
 
 .flex-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: center;
 }
 
 .content {
@@ -70,6 +70,7 @@
     padding-top: 70px;
     height: 700px;
     justify-content: center;
+    align-content: center;
 }
 
 .ourmission {
@@ -77,26 +78,36 @@
 }
 
 #monthtitle {
-  display: flex;
+  display: block;
   width: 1000px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 #monthmenu {
   display: flex;
-  width: 1000px;
+  width: 250px;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 #monthitem {
+  display: inline-flex;
   height: 250px;
   width: 300px;
+  justify-content: space-around;
 }
 
-#monthpic {
+.monthpic {
+  display: inline-block;
   height: 200px;
   width: 300px;
   padding: 10px;
+}
+
+.monthcaption {
+  display: inline-block;
+  font-size: 14px;
+  text-align: center;
 }
 
 h2 {
@@ -109,4 +120,9 @@ h4 {
   font-size: 16px;
   text-align: center;
   z-index: 15;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
 }
