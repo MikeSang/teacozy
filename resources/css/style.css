@@ -1,24 +1,24 @@
 * {
   font-family: Helvetica, sans-serif;
-  font-size: 22px;
   color: seashell;
-  background-color: black;
   margin: 0px;
 }
 
 body {
   align-content: center;
+  background-color: black;
 }
 
 /* HEADER SECTION */
 
 #header {
   display: flex;
-  height: 69px;
+  height: 70px;
   width: 1300px;
   border-bottom: 1px solid seashell;
-  z-index: 5;
+  z-index: 100;
   position: fixed;
+  background-color: black;
 }
 
 .headcontainer {
@@ -43,13 +43,15 @@ body {
   justify-content: space-between;
 }
 
-/* HERO */
+
+/* MAIN */
 
 .main {
   width: 1200px;
   display: block;
   margin: auto;
   justify-content: center;
+  position: relative;
 }
 
 .flex-container {
@@ -62,21 +64,28 @@ body {
   display: block;
   background-color: black;
   padding: 10px;
+  position: relative;s
 }
 
-#mission {
-    display: block;
+/* MISSION */
+
+.mission {
+    display: flex;
     background-image: url(../images/img-mission-background.jpg);
     background-color: gray;
-    padding-top: 70px;
     height: 700px;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
-.ourmission {
-
+#ourmission {
+    width: 1200px;
+    z-index: 50px;
+    align-items: center;
+    padding: 25px;
+    background-color: black;
 }
+
+/* MENU */
 
 #monthtitle {
   display: block;
@@ -88,6 +97,7 @@ body {
 #monthmenu {
   display: flex;
   width: 1000px;
+  padding: 50px;
   flex-wrap: wrap;
 }
 
@@ -96,6 +106,9 @@ body {
   height: 250px;
   width: 300px;
   justify-content: space-around;
+  font-size: 14px;
+  font-weight: bold;
+
 }
 
 .monthpic {
@@ -106,23 +119,68 @@ body {
   font-size: 12px;
 }
 
-.monthcaption {
-  display: inline-block;
-  font-size: 10px;
-  text-align: center;
-  font-weight: bold;
+/* LOCATIONS */
+
+#locations {
+  display: flex;
+  height: 500px;
+  width: 1200px;
+  align-items: center;
+  background-image: url(../images/img-locations-background.jpg);
 }
 
+#locationscontent {
+    display: block;
+    width: 1200px;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 20px;
+}
 
+#places {
+  justify-content: space-around;
+  display: inline-flex;
+  margin-top: 15px;
+}
 
+.placeblock {
+  display: inline-flex;
+  margin: 20px 40px;
+  width: 300px;
+  height: 300px;
+  z-index: 5;
+}
 
+.placeinfo {
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  align-content: space-around;
+  opacity: 1;
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  background-color: black;
+}
 
+.placeinfo h5 {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/* CONTACT */
 
 #contact {
+  display: block;
   text-align: center;
+  height: 200px;
 }
 
+
+/* COPYRIGHT */
+
 #copyright {
+  display: block;
   padding-left: 20px;
   font-size: 10px;
   font-weight: bold;
@@ -133,6 +191,12 @@ body {
 
 h2 {
   font-size: 24px;
+  text-align: center;
+  z-index: 15;
+}
+
+h3 {
+  font-size: 20px;
   text-align: center;
   z-index: 15;
 }
