@@ -27,6 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 10px;
+  background-color: black;
 }
 
 .navcontainer {
@@ -52,6 +53,7 @@ body {
   margin: auto;
   justify-content: center;
   position: relative;
+  background-color: black;
 }
 
 .flex-container {
@@ -62,9 +64,8 @@ body {
 
 .content {
   display: block;
-  background-color: black;
   padding: 10px;
-  position: relative;s
+  position: relative;
 }
 
 /* MISSION */
@@ -138,35 +139,32 @@ body {
 }
 
 #places {
-  justify-content: space-around;
+  justify-content: center;
   display: inline-flex;
+  flex-wrap: wrap;
   margin-top: 15px;
 }
 
 .placeblock {
-  display: inline-flex;
-  margin: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 5px 20px;
   width: 300px;
   height: 300px;
   z-index: 5;
-}
-
-.placeinfo {
-  display: inline-block;
+  background-color: black;
   font-size: 12px;
   text-align: center;
-  align-content: space-around;
-  opacity: 1;
-  width: 300px;
-  height: 300px;
-  z-index: 10;
-  background-color: black;
 }
 
-.placeinfo h5 {
+.placeblock h5 {
   font-size: 12px;
   font-weight: normal;
+  margin: 2px;
+  display: block;
 }
+
 
 /* CONTACT */
 
